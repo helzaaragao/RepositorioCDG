@@ -1,0 +1,20 @@
+banner{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 30em; 
+}
+
+.bannerTexto{ 
+    width: 22em;
+}
+
+.bannerTexto i { 
+   color: #F72585; 
+}
+
+.bannerImage img{ 
+   width: 20em;
+}
+
