@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+@import 
+url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Gradiente</title>
+    <style>
+        .card {
+            border-top-radius: 16px;
+        }
+        .card-top {
+            background-color: #0C0285;
+            height: 30px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+     
+        }
+
+        /* Estilo do fundo gradiente */
+        .card-gradient {
+            background-size: cover;
+            height: 350px;
+            background: linear-gradient(to right, #000000, transparent);
+            padding: 5%;
+}
+        .card-title {
+            margin-top: -5%;
+            margin-bottom: -3%;
+            margin-left: 3%;
+            color: #F72585;
+            font-family: 'Sora', sans-serif;
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .corpo {
+          margin-bottom: 5%;
+          margin-left: 3%;
+          color: white;
+          font-family: 'Sora', sans-serif;
+          font-weight: regular;
+          font-size: 22px;
+          width: 600px;
+          height: 1px;
+}
+        /* Estilos para o botão */
+        .card-button {
+            margin-top: 5%;
+            margin-bottom: -5%;
+            background-color: #1ABCFE; 
+            color: preto;
+            font-family: 'Sora', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            padding: 7px 37px;
+            border-radius: 8px;
+        }
+        .card-image {
+            background-image: url(https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais);
+            background-size: cover;
+            height: 350px;
+         }
+    </style>
+</head>
+<body>
+    <div class="card">
+     <div class="card-top"></div>
+     <div class="card-gradient">
+       <div class="card-title">
+            <h2>Freepik</h2>
+       </div>
+       <div class="corpo">
+            <p>Imagens gratuitas com limite diário de 10 dowloads por conta e 3 sem conta, uma melhor busca com o uso do inglês e precisa dar crédito aos autores.</p>
+            <button class="card-button">site</button>
+       </div>
+       <div class="card-image"></div>
+      </div>
+     </div>
+</body>
+</html>
