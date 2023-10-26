@@ -1,0 +1,53 @@
+.card {
+    border-top-radius: 16px;
+ }
+.card-gradient {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-size: cover;
+    height: 500px;
+    background: linear-gradient(to right, #000000, transparent);
+    padding: 0%;
+}
+.card-top {
+    background-color: #0C0285;
+    height: 23px;
+    clip-path: polygon(40% 0%, 6% 0%,8% 100%, 38% 100%);
+}
+.card-title {
+    margin-bottom: -3%;
+    margin-left: 10%;
+    color: #F72585;
+    font-family: 'Sora', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+}
+.corpo {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  color: white;
+  font-family: 'Sora', sans-serif;
+  font-weight: regular;
+  font-size: 22px;
+  width: 600px;
+  height: 1px;
+  line-height: 30px;
+}
+/* Estilos para o botão */
+.card-button {
+    margin-top: 5%;
+    margin-bottom: -5%;
+    background-color: #1ABCFE; 
+    color: preto;
+    font-family: 'Sora', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    padding: 7px 37px;
+    border-radius: 8px;
+}
+.card-image {
+    background-image: url('https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais)';
+    background-size: cover;
+    height: 350px;
+ }
