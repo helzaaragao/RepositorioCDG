@@ -190,13 +190,6 @@ banner{
     justify-content: center;
     align-items: center;
   }
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Gradiente</title>
-    <style>
-
-        /* Estilo do fundo gradiente */
         .card {
             border-top-radius: 16px;
          }
