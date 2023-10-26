@@ -33,7 +33,6 @@
   height: 1px;
   line-height: 30px;
 }
-/* Estilos para o botão */
 .card-button {
     margin-top: 5%;
     margin-bottom: -5%;
@@ -50,4 +49,4 @@
     background-image: url('https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais)';
     background-size: cover;
     height: 350px;
- }
+}
