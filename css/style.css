@@ -1,245 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
 
-*{ 
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #060A2A;
-}
-
-a{
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a:hover{
-    color: #F72585;
-    font-weight: bold;
-    text-decoration: underline;
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.logo{
-    width: 241px;
+
+a:hover {
+  color: #f72585;
+  font-weight: bold;
+  text-decoration: underline;
 }
-nav{
-    display: flex;
+
+body {
+  background-color: #060a2a;
+}
+
+.logo {
+  width: 241px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(114, 9, 183, 0.37) -124.54%,
+    rgba(57, 57, 57, 0.37) 100%
+  );
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: linear-gradient(
+      180deg,
+      rgba(114, 9, 183, 0.37) -124.54%,
+      rgba(57, 57, 57, 0.37) 100%
+    );
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    align-items: center;
-    font-family: 'Sora', sans-serif;
-    background: linear-gradient(180deg, rgba(114, 9, 183, 0.37) -124.54%, rgba(57, 57, 57, 0.37) 100%);
-    height: 8vh;
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
-}
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-}
-.mobile-menu{
-    display: none;
-    cursor: pointer;    
-}
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-}
-@media  (max-width:999px){
-    body{
-        overflow-x: hidden;
-    }
-    
-    .nav-list{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background: linear-gradient(180deg, rgba(114, 9, 183, 0.37) -124.54%, rgba(57, 57, 57, 0.37) 100%);
-        flex-direction: column;
-       align-items: center;
-       justify-content: space-around;
-       transform: translateX(100%);
-       transition: transform 0.3s ease-in;
-    }
-    .nav-list li{
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu{
-        display: block;
-    }
-}
-
-.nav-list.active{
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX((50px));
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-.mobile-menu.active .line1{
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-.mobile-menu.active .line2{
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
     opacity: 0;
-}
-.mobile-menu.active .line3{
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
-banner{ 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 30em;
-    font-family: 'Sora', sans-serif; 
-    color: #FFFFFF; 
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
 
-.bannerTexto{ 
-    width: 22em;
+.nav-list.active {
+  transform: translateX(0);
 }
 
-.bannerTexto i { 
-   color: #F72585; 
-   font-size: 0.8em;
-   font-style: normal;
-   font-weight: bold;
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX((50px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 
-.bannerTexto h1{ 
-      margin-block-start: 0.2em;
-      margin-block-end: 0; 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 30em;
+  font-family: "Sora", sans-serif;
+  color: #ffffff;
 }
 
-.bannerTexto span{ 
-    color: #F72585; 
- 
+.bannerTexto {
+  width: 22em;
 }
 
-.bannerTexto p { 
-    font-size: 0.9em; 
-    margin-block-start: 0.5em;
-    margin-block-end: 0; 
-    font-weight: 400;
+.bannerTexto i {
+  color: #f72585;
+  font-size: 0.8em;
+  font-style: normal;
+  font-weight: bold;
 }
 
-.bannerImage img{ 
-   width: 20em;
+.bannerTexto h1 {
+  margin-block-start: 0.2em;
+  margin-block-end: 0;
+}
+
+.bannerTexto span {
+  color: #f72585;
+}
+
+.bannerTexto p {
+  font-size: 0.9em;
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+  font-weight: 400;
+}
+
+.bannerImage img {
+  width: 20em;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #060a2a;
-  }
-  
-  .abas {
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(#7209b7, #7209b700);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-  }
-  
-  div[class*="aba"] {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .icone {
-    background: none;
-    position: relative;
-    height: 22px;
-  }
-  
-  .icone path {
-    fill: #f72585;
-  }
-  
-  .selecionado {
-    background-image: url(../assets/aba-selecionada.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-        .card {
-            border-top-radius: 16px;
-         }
-        .card-gradient {
-            border-top-left-radius: 16px;
-            border-top-right-radius: 16px;
-            background-size: cover;
-            height: 500px;
-            background: linear-gradient(to right, #000000, transparent);
-            padding: 0%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-        .card-top {
-            background-color: #0C0285;
-            height: 23px;
-            clip-path: polygon(40% 0%, 6% 0%,8% 100%, 38% 100%);
-        }
-        .card-title {
-            margin-bottom: -3%;
-            margin-left: 10%;
-            color: #F72585;
-            font-family: 'Sora', sans-serif;
-            font-size: 55px;
-            font-weight: bold;
-        }
-        .corpo {
-          margin-bottom: 10%;
-          margin-left: 10%;
-          color: white;
-          font-family: 'Sora', sans-serif;
-          font-weight: regular;
-          font-size: 22px;
-          width: 600px;
-          height: 1px;
-          line-height: 30px;
+
+body {
+  background-color: #060a2a;
 }
-        /* Estilos para o botão */
-        .card-button {
-            margin-top: 5%;
-            margin-bottom: -5%;
-            background-color: #1ABCFE; 
-            color: preto;
-            font-family: 'Sora', sans-serif;
-            font-size: 22px;
-            font-weight: bold;
-            border: none;
-            padding: 7px 37px;
-            border-radius: 8px;
-        }
-        .card-image {
-            background-image: url('https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais)';
-            background-size: cover;
-            height: 350px;
-        }
+
+.abas {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(#7209b7, #7209b700);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+div[class*="aba"] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone {
+  background: none;
+  position: relative;
+  height: 22px;
+}
+
+.icone path {
+  fill: #f72585;
+}
+
+.selecionado {
+  background-image: url(../assets/aba-selecionada.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+
+.card {
+  border-top-radius: 16px;
+  display: block;
+  position: relative;
+  width: 67.5em;
+  height: 28em;
+}
+
+.card-gradient {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-size: cover;
+  height: 500px;
+  background: linear-gradient(to right, #000000, transparent);
+  padding: 0%;
+}
+.card-top {
+  background-color: #0c0285;
+  height: 23px;
+  clip-path: polygon(40% 0%, 6% 0%, 8% 100%, 38% 100%);
+}
+.card-title {
+  margin-bottom: -3%;
+  margin-left: 10%;
+  color: #f72585;
+  font-family: "Sora", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+.corpo {
+  margin-bottom: 10%;
+  margin-left: 10%;
+  color: white;
+  font-family: "Sora", sans-serif;
+  font-weight: regular;
+  font-size: 22px;
+  width: 600px;
+  height: 1px;
+  line-height: 30px;
+}
+/* Estilos para o botão */
+.card-button {
+  margin-top: 5%;
+  margin-bottom: -5%;
+  background-color: #1abcfe;
+  color: preto;
+  font-family: "Sora", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  padding: 7px 37px;
+  border-radius: 8px;
+}
+
+.card-image {
+  background-image: url("https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais");
+  background-size: cover;
+  height: 350px;
+}
