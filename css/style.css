@@ -6,31 +6,17 @@
   box-sizing: border-box;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #f72585;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-body {
+body, input ,textarea , button {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 1rem; 
   background-color: #060a2a;
-}
-
-.logo {
-  width: 241px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Sora", sans-serif;
   background: linear-gradient(
     180deg,
     rgba(114, 9, 183, 0.37) -124.54%,
@@ -39,18 +25,38 @@ nav {
   height: 8vh;
 }
 
+.logo {
+  width: 12rem;
+}
+
 .nav-list {
-  list-style: none;
+  width: 30rem;
   display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
+
 .nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
+  font-size: 1.2rem;
 }
+
+.menu {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu:hover {
+  color: #f72585;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .mobile-menu {
   display: none;
   cursor: pointer;
 }
+
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -58,6 +64,7 @@ nav {
   margin: 8px;
   transition: 0.3s;
 }
+
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
@@ -119,7 +126,6 @@ nav {
   justify-content: center;
   width: 100vw;
   height: 30em;
-  font-family: "Sora", sans-serif;
   color: #ffffff;
 }
 
@@ -238,7 +244,6 @@ div[class*="aba"] {
 .card-title {
   margin-left: 10%;
   color: #f72585;
-  font-family: "Sora", sans-serif;
   font-size: 2em;
   font-weight: bold;
 }
@@ -246,9 +251,6 @@ div[class*="aba"] {
   margin-bottom: 10%;
   margin-left: 10%;
   color: white;
-  font-family: "Sora", sans-serif;
-  font-weight: regular;
-  font-size: 1em;
   width: 600px;
   height: 1px;
   line-height: 30px;
@@ -259,7 +261,6 @@ div[class*="aba"] {
   margin-bottom: -5%;
   background-color: #1abcfe;
   color: preto;
-  font-family: "Sora", sans-serif;
   font-size: 22px;
   font-weight: bold;
   border: none;
