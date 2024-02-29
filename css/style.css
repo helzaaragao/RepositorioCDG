@@ -281,7 +281,10 @@ div.bannerImage{ /*Definindo tamanho da div img*/
 }
 div.bannerImage > img{ /*Definindo que a imagem pega 100% da div img*/
   width:100%; 
-  height: 100%
+  height: 80%; 
+  display: flex; 
+  margin-top: 4em; 
+  opacity: 0.5;
 }
 div.bannerImage > div{
   position: absolute; 
@@ -305,4 +308,8 @@ div.img2 > div{
   margin-top: -75px;  
   width:50%; 
   height: 50%; 
+}
+
+.elipse{
+  height: 50%;
 }
