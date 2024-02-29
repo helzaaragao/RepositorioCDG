@@ -273,3 +273,36 @@ div[class*="aba"] {
   background-size: cover;
   height: 350px;
 }
+
+div.bannerImage{ /*Definindo tamanho da div img*/
+  position: relative; 
+  width: 35em; 
+  height: 35em;
+}
+div.bannerImage > img{ /*Definindo que a imagem pega 100% da div img*/
+  width:100%; 
+  height: 100%
+}
+div.bannerImage > div{
+  position: absolute; 
+  left: 50%; 
+  margin-left: -137px;  
+  top: 50%; 
+  margin-top: -149px;  
+  width:50%; 
+  height: 50%; 
+}
+
+div.img2 > img{
+  width:100%; 
+  height: 100%
+}
+div.img2 > div{
+  position: absolute; 
+  left: 50%; 
+  margin-left: -120px; 
+  top: 50%; 
+  margin-top: -75px;  
+  width:50%; 
+  height: 50%; 
+}
