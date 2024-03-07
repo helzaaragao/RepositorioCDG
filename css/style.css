@@ -276,8 +276,8 @@ div[class*="aba"] {
 
 div.bannerImage{ /*Definindo tamanho da div img*/
   position: relative; 
-  width: 35em; 
-  height: 35em;
+  width: 50rem; 
+  height:  50rem;
 }
 div.bannerImage > img{ /*Definindo que a imagem pega 100% da div img*/
   width:100%; 
@@ -289,16 +289,17 @@ div.bannerImage > img{ /*Definindo que a imagem pega 100% da div img*/
 div.bannerImage > div{
   position: absolute; 
   left: 50%; 
-  margin-left: -137px;  
-  top: 50%; 
-  margin-top: -149px;  
+  margin-left: -145px;  
+  top: 50%;  
+  margin-bottom: 50px; 
   width:50%; 
   height: 50%; 
 }
 
 div.img2 > img{
   width:100%; 
-  height: 100%
+  height: 100%; 
+  
 }
 div.img2 > div{
   position: absolute; 
@@ -309,6 +310,7 @@ div.img2 > div{
   width:50%; 
   height: 50%; 
 }
+
 
 .elipse{
   height: 50%;
