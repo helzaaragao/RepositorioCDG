@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -198,7 +196,7 @@ div[class*="aba"] {
 }
 
 .selecionado {
-  background-image: url(../assets/aba-selecionada.png);
+  background-image: url(../assets/abaSelecionada.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -269,7 +267,6 @@ div[class*="aba"] {
 }
 
 .card-image {
-  background-image: url("https://br.freepik.com/fotos-gratis/vibrante-paisagem-urbana-graffiti-metal-e-vida-noturna-colidem-gerados-por-ia_42191664.htm#query=grafite%20colorido%20letras&position=42&from_view=search&track=ais");
   background-size: cover;
   height: 350px;
 }
