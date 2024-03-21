@@ -185,16 +185,6 @@ div[class*="aba"] {
   align-items: center;
 }
 
-.icone {
-  background: none;
-  position: relative;
-  height: 22px;
-}
-
-.icone path {
-  fill: #f72585;
-}
-
 .selecionado {
   background-image: url(../assets/abaSelecionada.svg);
   background-repeat: no-repeat;
