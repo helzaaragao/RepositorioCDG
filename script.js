@@ -38,3 +38,32 @@ const mobileNavbar = new MobileNavbar(
 )
 
 mobileNavbar.init();
+
+const abas = document.querySelectorAll(".abas");
+// document.query mais detalhados para as aba
+
+abas.forEach(aba => {
+    aba.addEventListener("click", function(){ 
+        if(aba.classList.contains("selecionado")) return
+        abaSelecionada(aba); 
+        mostrarInfosAba(aba);
+    })
+}); 
+
+function abaSelecionada(aba) {
+    const abaSelected = document.querySelector(".aba.selecionado"); 
+    abaSelected.classList.remove("selecionado"); 
+    aba.classList.add("selecionado")
+}; 
+
+function mostrarInfosAba(aba) { 
+    const infoSelected = document.querySelector("cards.selecionado"); 
+    infoSelected.classList.remove("selecionado")
+
+    const idElementInfoAba = `info-${aba.id}` 
+
+    const infoMostrar = document.getElementById(idElementInfoAba)
+    infoMostrar.classList.add("selecionado")
+}
+
+// https://codepen.io/Hina_le/pen/MWzKzrJ
