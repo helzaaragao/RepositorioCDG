@@ -244,6 +244,22 @@ div.Hero > div{
   height: 100%;
 }
 
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #F72585;
+  color: white;
+  width: 100%;
+}
+
+footer h2 { 
+  color:#7209b7;
+}
+
+footer h5 { 
+  /* color: #1ABCFE; */
+}
+
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
