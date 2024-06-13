@@ -159,7 +159,7 @@ div[class*="aba"] {
 }
 
 .cards {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -256,9 +256,9 @@ footer h2 {
   color:#7209b7;
 }
 
-footer h5 { 
-  /* color: #1ABCFE; */
-}
+/* footer h5 { 
+  color: #1ABCFE;
+} */
 
 @media (max-width: 999px) {
   body {
