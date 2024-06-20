@@ -78,17 +78,18 @@ nav {
 }
 
 .bannerTexto {
-  width: 22em;
+  width: 44em;
 }
 
 .bannerTexto i {
   color: #f72585;
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: bold;
 }
 
 .bannerTexto h1 {
+  font-size: 2em;
   margin-block-start: 0.2em;
   margin-block-end: 0;
 }
@@ -98,7 +99,7 @@ nav {
 }
 
 .bannerTexto p {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-block-start: 0.5em;
   margin-block-end: 0;
   font-weight: 400;
@@ -246,14 +247,19 @@ div.Hero > div{
 
 footer {
   text-align: center;
+  margin-top: 1.5rem; 
   padding: 1.5rem;
-  background-color: #F72585;
+  background-color: #060a2a;
   color: white;
   width: 100%;
+  line-height: 1.5rem; 
 }
 
 footer h2 { 
-  color:#7209b7;
+  margin-top: 0.5rem;
+  color:#f72585;
+  line-height: 3rem; 
+  font-weight: normal;
 }
 
 /* footer h5 { 

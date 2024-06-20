@@ -39,20 +39,27 @@ const mobileNavbar = new MobileNavbar(
 
 mobileNavbar.init();
 
-const abas = document.querySelectorAll(".abas");
+document.addEventListener("DOMContentLoaded", function(){
+    showContent('image'); 
+})
+
+const abas = document.querySelectorAll(".abas > div");
 // document.query mais detalhados para as aba
 
 abas.forEach(aba => {
     aba.addEventListener("click", function(){ 
-        if(aba.className.contains("selecionado")) return
+        if(aba.classList.contains("selecionado")) return
         abaSelecionada(aba); 
+        showContent(abas[index].dataset.contentId);
     })
 }); 
 
 function abaSelecionada(aba) {
-    const abaSelected = document.querySelector(".aba.selecionado"); 
-    abaSelected.className.remove(".selecionado"); 
-    aba.className.add(".selecionado")
+    const abaSelected = document.querySelector(".selecionado"); 
+    if(abaSelected){
+        abaSelected.classList.remove(".selecionado"); 
+    }
+    aba.classList.add(".selecionado")
 }; 
 
 
@@ -63,5 +70,7 @@ function showContent(contentId){
     const selectedContent = document.getElementById(contentId); 
     selectedContent.style.display = 'flex';
 }
+
+
 
 // https://codepen.io/Hina_le/pen/MWzKzrJ
