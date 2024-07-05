@@ -170,36 +170,32 @@ div[class*="aba"] {
 }
 
 .card {
+  margin-top: 2.5rem;;
   display: flex; 
   flex-direction: column;
   align-items: center;
-  width: 65rem;
-  height: 27rem;
-  margin-bottom: 1em;
+  width: 67.563rem;
+  height: 28.188rem;
+ 
 }
 
 .card-gradient {
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  background-size: cover;
-  height: 500px;
-  background: linear-gradient(to right, #000000, transparent);
-  padding: 0%;
+  margin-top: 4.375rem;
+  margin-right: 15.625rem;
 }
 .card-top {
-  background-color: #0c0285;
-  height: 23px;
-  clip-path: polygon(40% 0%, 6% 0%, 8% 100%, 38% 100%);
+  height: 30px;
+  margin-left: 30px;
+  clip-path: polygon(42% 0%, 4% 0%, 6% 100%, 40% 100%);
+  width: 100%;
 }
 .card-title {
-  margin-left: 10%;
   color: #f72585;
   font-size: 2em;
   font-weight: bold;
 }
 .corpo {
   margin-bottom: 10%;
-  margin-left: 10%;
   color: white;
   width: 600px;
   height: 1px;
@@ -208,7 +204,6 @@ div[class*="aba"] {
 /* Estilos para o botão */
 .card-button {
   margin-top: 5%;
-  margin-bottom: -5%;
   background-color: #1abcfe;
   color: preto;
   font-size: 22px;
