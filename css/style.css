@@ -257,10 +257,6 @@ footer h2 {
   font-weight: normal;
 }
 
-/* footer h5 { 
-  color: #1ABCFE;
-} */
-
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
